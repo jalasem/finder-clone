@@ -1,0 +1,68 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1506370612293-360919ece3d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=30");
+  background-size: cover;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  height: 100vh; }
+
+.top-bar {
+  color: white;
+  background: #212121fa;
+  padding: 0 1%; }
+  .top-bar, .top-bar .segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .top-bar .menu-item {
+    padding: 1px .25rem;
+    margin: 0 .5rem;
+    font-weight: 300;
+    font-size: .85rem;
+    cursor: pointer; }
+    .top-bar .menu-item.icon {
+      margin: 0 .25rem; }
+    .top-bar .menu-item.has-content {
+      display: flex;
+      align-items: center;
+      margin: 0; }
+      .top-bar .menu-item.has-content img {
+        margin-left: .5rem; }
+  .top-bar .icon {
+    width: 1rem; }
+    .top-bar .icon.battery {
+      width: auto;
+      height: 1.5rem; }
+  .top-bar .bold {
+    font-weight: 500; }
+  .top-bar .notification-icon {
+    height: .6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .top-bar .notification-icon .bar {
+      position: relative;
+      height: 1px;
+      width: .8rem;
+      background: white; }
+      .top-bar .notification-icon .bar:nth-child(2) {
+        width: .6rem; }
+      .top-bar .notification-icon .bar:before {
+        content: '';
+        background: white;
+        width: 2px;
+        height: 1px;
+        position: absolute;
+        left: -4px; }
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
