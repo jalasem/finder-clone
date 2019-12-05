@@ -94,3 +94,44 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.finder-window {
+  border: 2px solid linear-gradient(to right,#3c3c3b, #2e2e2d);
+  width: 50vw;
+  height: 50vh;
+  border-radius: 4px;
+  background: $dark;
+  display: grid;
+  resize: both;
+  overflow: auto;
+
+  grid-template-areas:
+    "menu-bar menu-bar"
+    "side-menu main"
+    "side-menu main";
+  
+  grid-template-columns: 12.5rem 1fr;
+  grid-template-rows: 4rem 1fr;
+
+  nav {
+    grid-area: menu-bar;
+    background: linear-gradient(to top, #3c3d3c, #434342);
+    border-bottom: 1px solid #131312;
+    box-shadow: 0 1px 1px solid #131312;
+
+    .search {
+      input {
+        background: #686867;
+      }
+    }
+  }
+
+  aside {
+    grid-area: side-menu;
+    background: #3a3732;
+  }
+
+  main {
+    grid-area: main;
+  }
+}
